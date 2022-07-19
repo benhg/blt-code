@@ -4,6 +4,27 @@
 
 `sudo ip route add default via 192.168.0.2` (setting up Mayo as gateway)
 
+
+permanently: 
+
+```
+
+netplan.conf
+
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    eno1:
+      dhcp4: true
+    eno2:
+      dhcp4: true
+  version: 2
+routes:
+        - to: 0.0.0.0/0
+          via: 192.168.0.2
+~                                
+```
+
 Then enabling IPTables on Mayo:
 ```
 glick@mayo:~$ sudo iptables -t nat -A POSTROUTING -o enp5s0f0 -j MASQUERADE
