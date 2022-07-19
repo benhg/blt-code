@@ -15,3 +15,22 @@ glick@mayo:~$ sudo iptables -t nat -A POSTROUTING -o enp5s0f1 -j MASQUERADE
 Kernel packet forwarding boot param has stuck, so we just won't change that.
 
 Next step is to figure out how to assign the host name and IP mapping.
+
+
+Assigning static IP:
+
+bad way: 
+
+glick@mayo:~$ cat /etc/hosts
+127.0.0.1 localhost
+127.0.1.1 mayo
+192.168.0.109 bacon
+192.168.0.110 lettuce
+192.168.0.103 tomato
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
