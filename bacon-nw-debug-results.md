@@ -16,12 +16,12 @@ network:
   ethernets:
     eno1:
       dhcp4: true
+      routes:
+      - to: 0.0.0.0/0
+        via: 192.168.0.2
     eno2:
       dhcp4: true
   version: 2
-routes:
-        - to: 0.0.0.0/0
-          via: 192.168.0.2
 ~                                
 ```
 
