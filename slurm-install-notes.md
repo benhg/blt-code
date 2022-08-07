@@ -1,5 +1,7 @@
 # Installing and configuring slurm
 
+Installing to /opt
+
 ## Mayo
 1. install MUNGE https://github.com/dun/munge/wiki/Installation-Guide
     a. Install zlib
@@ -8,8 +10,12 @@
     d. Make munge user
     e. Munge release: https://github.com/dun/munge/releases (0.5.15)'
     f. Note munge key `/etc/munge/munge.key`
-2. 
-3. 
+2. Install mariadb
+3. Download SLURM: `wget https://download.schedmd.com/slurm/slurm-22.05.2.tar.bz2`
+4. bunzip2 slurm-22.05.2.tar.bz2 
+5. tar xf slurm-22.05.2.tar 
+6. cd slurm-22.05.2
+7. then follow https://slurm.schedmd.com/quickstart_admin.html#quick_start
 
 Slurm configuration generator: https://slurm.schedmd.com/configurator.html
 
