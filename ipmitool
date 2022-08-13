@@ -1,0 +1,2 @@
+root@mayo:/home/glick# sudo ipmitool -I lanplus -U ADMIN -P ADMIN -H 192.168.0.4 power status
+Chassis Power is on
