@@ -1,6 +1,8 @@
 ```
 systemctl restart isc-dhcp-server
 
+file is `/var/lib/dhcpd/dhcpd.leases`  
+
 refs:
 http://www.ipamworldwide.com/ipam/isc-lease-file.html
 https://askubuntu.com/questions/392599/how-to-reserve-ip-address-in-dhcp-server
@@ -10,6 +12,7 @@ https://askubuntu.com/questions/1403367/setup-dhcp-server-on-ubuntu-20-04
 192.168.0.111 lettuce
 192.168.0.103 tomato
 192.168.0.104 sprouts
+192.168.0.107 bread
 
 Address                  HWtype  HWaddress           Flags Mask            Iface
 192.168.0.8                      (incomplete)                              enp5s0f0
