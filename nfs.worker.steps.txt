@@ -6,6 +6,7 @@ emacs /etc/fstab:
 mayo.blt.lclark.edu:/local       /local  nfs     defaults  0     0
 mayo.blt.lclark.edu:/home       /home  nfs     defaults  0     0
 
+mkdir /local
 mount -a
 
 ls /home
