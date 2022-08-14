@@ -1,0 +1,14 @@
+# /etc/fstab: static file system information.                                                                                                                                                                                        
+#                                                                                                                                                                                                                                    
+# Use 'blkid' to print the universally unique identifier for a                                                                                                                                                                       
+# device; this may be used with UUID= as a more robust way to name devices                                                                                                                                                           
+# that works even if disks are added and removed. See fstab(5).                                                                                                                                                                      
+#                                                                                                                                                                                                                                    
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>                                                                                                                                                               
+# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation                                                                                                                                                                       
+/dev/disk/by-id/dm-uuid-LVM-xZ5vGBYmRaKowounJXF4vkZnz5QOWx3UmB7wbNST4l1x6ZwRObjFE3O9j2NUq1cr / ext4 defaults 0 1
+# /boot was on /dev/sda2 during curtin installation                                                                                                                                                                                  
+/dev/disk/by-uuid/9e0efa6c-b901-4912-b6ab-73307a130b5a /boot ext4 defaults 0 1
+/swap.img       none    swap    sw      0       0
+mayo.blt.lclark.edu:/local       /local  nfs     defaults  0     0
+mayo.blt.lclark.edu:/home       /home  nfs     defaults  0     0
