@@ -1,4 +1,4 @@
-BREAD is a PITA....
+https://unix.stackexchange.com/questions/339011/how-do-i-mount-an-lvm-partitionBREAD is a PITA....
 
 First, problem was that in U22, we need to do the netplan a little different. This is what worked:
 ```
@@ -27,6 +27,6 @@ network:
 
 
 Then, there was a VG conflict: https://unix.stackexchange.com/questions/179855/device-already-mounted-or-resource-is-busy
-
-Renamed it to bread-vg
-
+- https://askubuntu.com/questions/926698/wipefs-device-or-resource-busy wiped disk
+- https://unix.stackexchange.com/questions/339011/how-do-i-mount-an-lvm-partition Tried this
+- https://www.linuxtechi.com/how-to-create-lvm-partition-in-linux/ created a new one (use xfs)
