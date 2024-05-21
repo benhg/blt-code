@@ -32,6 +32,8 @@ glick@mayo:~$ sudo iptables -t nat -A POSTROUTING -o enp5s0f0 -j MASQUERADE
 glick@mayo:~$ sudo iptables -t nat -A POSTROUTING -o enp5s0f1 -j MASQUERADE
 
 ```
+NOTE: must run this on both mayo and workers.
+
 
 Kernel packet forwarding boot param has stuck, so we just won't change that.
 
