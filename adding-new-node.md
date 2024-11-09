@@ -3,7 +3,21 @@
 1. Physical install
 2. Ubuntu bringup & login
 3. Figure out network interface names
-4. Create DHCP reservations for MAC addresses
+```
+glick@bacon:~$ cat /etc/netplan/00-installer-config.yaml
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    eno1:
+      dhcp4: true
+      routes:
+      - to: 0.0.0.0/0
+        via: 192.168.0.2
+    eno2:
+      dhcp4: true
+  version: 2
+```
+5. Create DHCP reservations for MAC addresses
     1. Test outgoing internet
 ```
 /etc/dhcpd.conf
