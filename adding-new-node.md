@@ -90,7 +90,7 @@ NOTE: SLURM is `slurm-wlm 19.05.5`
 ```
 
 10. Add `/etc/exports`
-
+NOTE: must run `exportfs -ra`
 
 # COMPUTE NODES 
 GresTypes=gpu
