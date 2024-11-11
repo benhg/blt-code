@@ -87,15 +87,16 @@ bread:/bread                    /bread nfs     defaults 0 0
 NOTE: SLURM is `slurm-wlm 19.05.5`
     a. Add munge key from other workers over
 
-```
 
-10. Add `/etc/exports`
-NOTE: must run `exportfs -ra`
+```
 
 # COMPUTE NODES 
 GresTypes=gpu
 NodeName=bacon,lettuce,tomato CPUs=48 RealMemory=503000 Sockets=2 CoresPerSocket=12 ThreadsPerCore=2 State=UNKNOWN
 NodeName=sprouts CPUs=48 RealMemory=377000 Sockets=2 CoresPerSocket=12 ThreadsPerCore=2 State=UNKNOWN Gres=gpu:rtx2080ti:4
-NodeName=pickles,avodado CPUs=64 RealMemory=503000 Sockets=2 CoresPerSocket=16 ThreadsPerCore=2 State=UNKNOWN
+NodeName=pickles,onions CPUs=64 RealMemory=503000 Sockets=2 CoresPerSocket=16 ThreadsPerCore=2 State=UNKNOWN
 PartitionName=blt Nodes=ALL Default=YES MaxTime=INFINITE State=UP
 ```
+
+10. Add `/etc/exports`
+NOTE: must run `exportfs -ra`
