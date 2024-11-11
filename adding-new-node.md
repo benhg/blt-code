@@ -88,6 +88,10 @@ NOTE: SLURM is `slurm-wlm 19.05.5`
     a. Add munge key from other workers over
 
 ```
+
+10. Add `/etc/exports`
+
+
 # COMPUTE NODES 
 GresTypes=gpu
 NodeName=bacon,lettuce,tomato CPUs=48 RealMemory=503000 Sockets=2 CoresPerSocket=12 ThreadsPerCore=2 State=UNKNOWN
